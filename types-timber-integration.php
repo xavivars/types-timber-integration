@@ -3,7 +3,7 @@
 Plugin Name: Types Timber Integration
 Plugin URI: http://timber.upstatement.com
 Description: Integrates the Timber (Twig) template engine with the Types plugin
-Version: 0.1
+Version: 0.1.1
 Author: Xavi Ivars xavi.ivars@gmail.com
 Author URI: http://xavi.ivars.me
 License: GPLv3
@@ -27,7 +27,7 @@ class WpTypesTimber {
 	}
 	
 	function post_get_meta_field( $value, $post_id, $field_name ) {
-		return types_child_posts('links', $post_id);
+		return types_child_posts( $field_name, $post_id);
 	}
 }
  
