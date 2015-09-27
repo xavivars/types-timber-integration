@@ -27,7 +27,23 @@ class WpTypesTimber {
 	}
 	
 	function post_get_meta_field( $value, $post_id, $field_name ) {
-		return types_child_posts( $field_name, $post_id);
+		if( ! empty($value) ) {
+			return $value;
+		}
+
+		$children = types_child_posts( $field_name, $post_id );
+
+		if ( is_array( $children )) {
+			foreach ( $children as &$child ) {
+				$child = new TimberPost( $child->ID );
+			}
+
+			$children = array_values($children);
+
+			return $children;
+		}
+
+		return false;
 	}
 }
  
