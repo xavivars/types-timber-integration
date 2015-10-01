@@ -1,5 +1,6 @@
 {
     "name": "xavivars/types-timber-integration",
+    "type": "wordpress-plugin",
     "description": "Timber integration fixes with Types",
     "repositories":[
         {
