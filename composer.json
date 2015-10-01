@@ -11,10 +11,5 @@
     "require": {
         "wpackagist-plugin/timber-library":"dev-trunk",
         "wpackagist-plugin/types":"dev-trunk"
-    },
-    "extra": {
-        "branch-alias": {
-            "master": "0.1.0"
-        }
     }
 }
