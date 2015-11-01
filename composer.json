@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "wpackagist-plugin/timber-library":"dev-trunk",
-        "wpackagist-plugin/types":"dev-trunk"
+        "jarednova/timber":">=0.22.0",
+        "wpackagist-plugin/types":"^1.8"
     }
 }
