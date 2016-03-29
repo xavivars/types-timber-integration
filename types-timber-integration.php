@@ -13,8 +13,8 @@ GitHub Plugin URI: xavivars/types-timber-integration
 class WpTypesTimber {
 
 	function __construct() {
-		add_filter( 'timber_post_get_meta', array( $this, 'post_get_meta' ), 10, 2 );
-		add_filter( 'timber_post_get_meta_field', array( $this, 'post_get_meta_field' ), 10, 3 );
+		add_filter( 'timber_post_get_meta', array( $this, 'post_get_meta' ), 11, 2 );
+		add_filter( 'timber_post_get_meta_field', array( $this, 'post_get_meta_field' ), 11, 3 );
 	}
 
 	function post_get_meta( $customs ) {
