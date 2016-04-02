@@ -10,6 +10,6 @@
     ],
     "require": {
         "wpackagist-plugin/timber-library":"^0.22",
-        "wpackagist-plugin/types":"^1.8"
+        "wpackagist-plugin/types":"^1.9"
     }
 }
