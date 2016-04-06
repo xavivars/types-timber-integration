@@ -20,7 +20,9 @@ class WpTypesTimber {
 	function post_get_meta( $customs ) {
 		foreach($customs as $key=>$value){
 			$no_wpcf_key = str_replace('wpcf-', '', $key);
-			$customs[$no_wpcf_key] = $value;
+			if( ! isset( $customs[$no_wpcf_key] )) {
+                            $customs[$no_wpcf_key] = $value;
+                        }
 		}
 
 		return $customs;
