@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "wpackagist-plugin/timber-library":"^0.22",
-        "wpackagist-plugin/types":"^1.9"
+        "wpackagist-plugin/timber-library":"^1.0.1",
+        "wpackagist-plugin/types":"^2.0.1"
     }
 }
